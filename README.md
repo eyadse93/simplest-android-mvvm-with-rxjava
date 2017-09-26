@@ -5,7 +5,7 @@ This sample app has four main components:
 * Views: 
   - It holds the different views of the app (in this example it holds the fragment).
   - Each "View" has a "ViewModel" (which is the second main component), and is "Subscription" (which receives the data using RXJava).
-  - Views are dumb! you should not put any computations there.
+  - Views are dumb! you should not put any computations here.
   
 * ViewModels:
   - This component is the brain of the "View", it handles all calculations and requests and give back a simple value to the "View" to show it in the UI.
