@@ -2,7 +2,7 @@ package com.eyad.mvvmsample.repository;
 
 
 import com.eyad.mvvmsample.models.UserModel;
-import com.eyad.mvvmsample.repository.live.LiveRequests;
+import com.eyad.mvvmsample.repository.cloud.LiveRequests;
 import com.eyad.mvvmsample.repository.local.LocalRequests;
 
 import rx.subjects.PublishSubject;
