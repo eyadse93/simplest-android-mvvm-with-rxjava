@@ -82,6 +82,12 @@ public class TestFragment extends BaseFragment {
                 .subscribe(new LoginSubscriber());
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        viewModel.onDestroy();
+    }
+
     private class LoginSubscriber extends Subscriber<UserModel> {
         @Override
         public void onCompleted() {

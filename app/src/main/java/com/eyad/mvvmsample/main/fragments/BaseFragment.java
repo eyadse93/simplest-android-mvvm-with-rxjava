@@ -19,7 +19,6 @@ public abstract class BaseFragment extends Fragment {
 
     @Override
     public void onPause() {
-
         super.onPause();
         unsubscribeFromNetworkRequests();
     }

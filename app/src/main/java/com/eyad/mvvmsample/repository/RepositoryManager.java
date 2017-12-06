@@ -29,6 +29,7 @@ public class RepositoryManager {
                 instance = new RepositoryManager();
                 instance.liveRequests = new LiveRequests(instance);
                 instance.localRequests = new LocalRequests(instance);
+                instance.subject = PublishSubject.create();
             }
             return instance;
         }
@@ -36,6 +37,10 @@ public class RepositoryManager {
 
     public void setSubject(PublishSubject subject){
         instance.subject = subject;
+    }
+
+    public PublishSubject getSubject() {
+        return subject;
     }
 
     public void loginRequest(String username, String password){
